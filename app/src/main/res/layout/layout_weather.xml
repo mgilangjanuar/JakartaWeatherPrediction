@@ -18,7 +18,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="20dp">
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
 
             <TextView
                 android:id="@+id/date"
@@ -39,7 +42,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="0.3"
                     android:contentDescription="@string/weather_icon"
-                    android:paddingTop="15dp"/>
+                    android:paddingTop="10dp"/>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -54,7 +57,7 @@
                         android:textSize="20sp"
                         android:textColor="@android:color/black"
                         android:paddingTop="10dp"
-                        android:paddingBottom="5dp"/>
+                        android:paddingBottom="2dp"/>
                     <TextView
                         android:id="@+id/description"
                         android:layout_width="wrap_content"
