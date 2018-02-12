@@ -37,7 +37,6 @@ class ForecastModel {
         var wind: Wind = Wind()
         var rain: Rain = Rain()
 
-
         class MainData {
             var temp: Double = 0.0
             @SerializedName("tmp_min")
@@ -72,7 +71,7 @@ class ForecastModel {
 
         class Rain {
             @SerializedName("3h")
-            var percent: Double = 0.0
+            var probability: Double = 0.0
         }
     }
 

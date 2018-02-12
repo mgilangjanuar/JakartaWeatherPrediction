@@ -1,6 +1,7 @@
 package com.mgilangjanuar.dev.weatherprediction.utils
 
 import com.mgilangjanuar.dev.weatherprediction.modules.forecast.model.ForecastModel
+import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
@@ -31,6 +32,6 @@ class WeatherApi {
     interface Service {
 
         @GET("forecast")
-        fun getForecast(@Query("q") query: String, @Query("appid") appId: String): ForecastModel
+        fun getForecast(@Query("q") query: String, @Query("appid") appId: String): Call<ForecastModel>
     }
 }
