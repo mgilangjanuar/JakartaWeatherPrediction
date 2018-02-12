@@ -3,22 +3,22 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="2dp" >
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="2dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:layout_marginTop="5dp"
         app:cardCornerRadius="2dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingBottom="20dp">
+            android:padding="20dp">
 
             <TextView
                 android:id="@+id/date"
@@ -37,19 +37,24 @@
                     android:id="@+id/icon"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0.3"/>
+                    android:layout_weight="0.3"
+                    android:contentDescription="@string/weather_icon"
+                    android:paddingTop="15dp"/>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:weightSum="0.7"
+                    android:paddingLeft="20dp"
                     android:orientation="vertical">
                     <TextView
                         android:id="@+id/title"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="24sp"
-                        android:textColor="@android:color/black"/>
+                        android:textSize="20sp"
+                        android:textColor="@android:color/black"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="5dp"/>
                     <TextView
                         android:id="@+id/description"
                         android:layout_width="wrap_content"

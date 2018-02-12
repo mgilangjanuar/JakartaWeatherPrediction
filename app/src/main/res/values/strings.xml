@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Weather Prediction</string>
+    <string name="app_name">Jakarta Weather Prediction</string>
+    <string name="weather_icon">Weather icon</string>
 </resources>
